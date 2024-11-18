@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromasy - Perfumes Personalizados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #1f1d1d;
+            color: #fff;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #2b2828;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.8)), url('hero-background.jpg') no-repeat center center/cover;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5em;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.3em;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #000;
+            background-color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffc700;
+        }
+
+        .about-section, .features-section, .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about-section h2, .features-section h2, .contact-section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #FFD700;
+        }
+
+        .features-section p {
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+
+        .features-section .feature-box {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .features-section .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Formulario de Contacto */
+        form input, form textarea {
+            width: 80%; 
+            margin: 10px auto; 
+            padding: 10px;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+            background-color: #2b2828;
+            color: #fff;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #FFC700;
+            outline: none;
+        }
+
+        form button {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #ffc700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header con Logo y Navegación -->
+    <header>
+        <img src="img_logo.png" alt="Aromasy Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#features">Personalización</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section id="home" class="hero-section">
+        <h1>Bienvenido a Aromasy</h1>
+        <p>Descubre la esencia que refleja tu personalidad.</p>
+        <a href="#features" class="cta-button">Crea tu Perfume</a>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about" class="about-section">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Aromasy es una innovadora empresa de perfumes personalizados que permite a los clientes diseñar sus propias fragancias únicas, reflejando su estilo y personalidad.</p>
+        <p>Ofrecemos ingredientes de alta calidad en notas cítricas, amaderadas, florales, y mucho más.</p>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="features" class="features-section">
+        <h2>¿Por Qué Aromasy?</h2>
+        <p>Muchas personas no encuentran una fragancia que se ajuste a su estilo. En Aromasy, puedes mezclar y combinar notas para crear un perfume exclusivo y totalmente personalizado.</p>
+        <div class="feature-box">
+            <h3>Personalización Completa</h3>
+            <p>Escoge entre una amplia gama de notas para diseñar una fragancia a tu medida.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Ingredientes de Alta Calidad</h3>
+            <p>Usamos solo los mejores ingredientes para asegurar la durabilidad y el lujo en cada perfume.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section">
+        <h2>Contáctanos</h2>
+        <p>¿Listo para crear tu fragancia personalizada? ¡Escríbenos!</p>
+        <form onsubmit="enviarMensaje(event)">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Correo" required>
+            <textarea name="message" placeholder="Tu Mensaje" rows="4"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script>
+        // Función de JavaScript para mostrar una alerta de agradecimiento
+        function enviarMensaje(event) {
+            event.preventDefault();
+            alert("¡Gracias por tu mensaje! Nos pondremos en contacto pronto.");
+        }
+    </script>
+</body>
+</html>
+
+
